@@ -1,0 +1,72 @@
+#+TITLE: Make It Stick
+#+STARTUP: indent
+
+[[./make-it-stick.html][HTML Export]]
+
+* Learning Is Misunderstood
+Learning is misunderstood and mistaught as an act of being able to repeat something. Ideally, when you learn something
+ You shold be able to apply it. This book dissects some myths associated with learning and puts forth novel techniques
+ for learning. These techniques are a result of careful scientific research by eminent professors in cognitive
+ psychology. The author defines learning as follows: 
+
+*Learning means acquiring knowledege and skills and having them available from memory so you can make sense of future
+problems and opportunities.*
+
+In order to become skilled at learning, it is important to realize the following: 
+
+1. Learning requires memory.
+2. Learning is required lifelong.
+3. Learning is an acquired skill.
+
+Learning by repition(practice) is popular because it shows immediate results. However, merely repeating something
+doesn't  help a recall and apply it later. *Learning by retrieval is better than learning by repetition/rereading.* What
+you need to repeat periodically is the process of retrieval and application to reinforce the learning. This process
+is slow but produces longer lasting learning and results in more versatile application in future.
+
+One must also not rely a preferred method of learning like listening or videos, instead you should go wide and adopt
+various  mediums of learning. You should become adept at understanding the underlying rules or principles that underpin
+various problems in order to apply those in unfamiliar situations.
+
+In order to achieve that, a person must learn by /testing/. Testing or evaluating the learnt makes it stick for a long
+time. This technique too requires reevaluation of skills but is far more effective.
+
+The recall of information should be done after a short interval after learning so that the process of recall is
+difficult thus highlighting the misunderstood or difficult aspects of the topic. This should be followed by /periodical/
+recall and testing at regular intervals which helps retention. We learn so that we can use prior knowledge and apply it
+to future unseen problems but repetition doesn't help here. Repetition just creates an illusion and brain has
+limitations on how much information it can cram at a time. *Neural connections on the other hand don't have any
+limits.* Working with higher level of abstractions and problems is only possible if you can retrieve the fudamental level
+of knowledge at will which can only be formed by more neural connections. Another technique to create more connections
+between concepts is /elaboration/; it is process of explaining the learnt concepts in your own words which is inherently
+difficult and therefore an effective retention strategy. Besides elaboration, a student must try to /connect/ prior
+knowledge to new concepts and /extract/ fundamental principles that connect one concept to another, this process creates
+better mental models that help extending knowledge to various other fields.
+
+Repeaed exposure to content doesn't help in forming mental models, they are formed by /experience/ that brain goes through
+while recalling learned content, the harder it is to recall the better the models. Mental models help you reason, solve
+new problems and create new knowledge. These models are improved if you experience /failures/ during recall or make a
+mistake because they bridge fundamental knowledge to higher level of learning.
+
+The author also ask us to be skeptical of new research when it suggests new methods of learning. Such research should be
+performed by trained professionals with calibrated test environment. Folklore and our teachers suggest techniques like
+rereading, dogged practice of similar problems etc. However, these techniques are ineffective. Dogged practice of
+problems/concepts and rereading creates and illusion of mastery. *These tecniques are ineffective because they are time
+consuming, don't result in durable memory, and create a self deception of familiarity/fluency of content which is very
+different from the mastery of content.*
+
+For example, to train pilots, it is not enough to have them learn procedures and make them understand the guts of the
+aircraft. Pilots are rigourously trained in simulations so that they get to apply their skills to strengthen them.
+
+* To Learn, Retrieve
+
+* Mix Up Your Practice
+
+* Embrace Difficulties
+
+* Avoid Illusions Of Knowing
+
+* Get Beyond Learning Styles
+
+* Increase Your Abilities
+
+* Make It Stick
