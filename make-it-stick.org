@@ -57,6 +57,12 @@ different from the mastery of content.*
 For example, to train pilots, it is not enough to have them learn procedures and make them understand the guts of the
 aircraft. Pilots are rigourously trained in simulations so that they get to apply their skills to strengthen them.
 
+firehose and then jolt "as a teacher"
+simulations and test
+why repitions arent useful : mastery of text, repitions are sometimes useful: e.g. phone number
+testing but it must result in successful retrieval, "as a student" keep testing yourself.
+knowledge and creativity; both are important.. you wont trust a creative surgeon over a knowledgable surgeon..
+
 * To Learn, Retrieve
 
 * Mix Up Your Practice
@@ -70,3 +76,16 @@ aircraft. Pilots are rigourously trained in simulations so that they get to appl
 * Increase Your Abilities
 
 * Make It Stick
+
+* My Conclusion
+
+* My TODO
+** TODO Create a minor-mode called learn-mode for org-mode
+It should have following features and more:
+*** Make reading/revising difficult
+- unordered/random sections in notes
+- mismatching fonts in text
+- mismatching font size in text
+*** Random topic reminders
+- Periodic reminders on random topics
+

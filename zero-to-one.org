@@ -1,0 +1,87 @@
+#+TITLE: Zero To One
+#+STARTUP: indent
+
+[[./zero-to-one.html][HTML Export]]
+
+* Chapter 1 – The Challenge of the Future
+“What important truth do few people agree with you on?” Answering this deceptively tricky question is the key to any
+future of progress—and to building a great business.
+
+-what important truth do very few people agree with you on?
+--my answer: people must keep learning; current level of knowledge is too vast to grasp for average human, we need help, everything else is a side effect of this.
+-geniuses are rare but brave geniuses are rare
+-this book is nota formula for startups but a thinking exercise that teaches thinking from first principles to make business decisions
+-technology(0to1) vs globalization(1-n)
+-world needs innovations that will take mankind from 0-1
+
+* Chapter 2 – Party Like It’s 1999
+The dogmas created after the dot-com crash continue to haunt us today. The first step to thinking clearly is to question
+what we think we know about the past.
+-understand history of events to predict future
+-lessons that have become Silicon Valley dogma after .com crash
+1. Make incremental advances
+2. Stay lean and flexible I.e. Planning is arrogant, instead experiment and try things out
+3. Improve on the competition
+4. Focus on product not sales. Technology is about product development not distribution. Viral growth is the only sustainable growth.
+-however, the opposite is true if you want to go from 0to1
+1. It is better to risk boldness than triviality
+2. A bad plan is better than no plan
+3. Competitive markets destroy profits 
+4. Sales matter as much as product
+
+-think for yourself how much of current business is shaped by mistaken reactions to past mistakes, don't follow or dismiss the crowd but think for yourself.
+
+* Chapter 3 – All Happy Companies Are Different
+The most successful businesses share one key feature that enables them to innovate at unprecedented scale.
+
+-lies told my monopolies and non-monopolies
+-creating and capturing value
+
+* Chapter 4 – The Ideology of Competition
+Competition isn’t just seen as a spur to productivity—for many, it’s a way of life. But what if it’s actually holding us
+back?
+
+* Chapter 5 – Last Mover Advantage
+Short-term thinking ruins companies. The most important lesson an entrepreneur can learn is to think big but start
+small.
+
+PNEBSD
+- Proprietary Products that are 10x better
+- Network effects
+- Economies of scale
+- Brand
+- Scaling up
+- Dont disrup/Last mover's advantage
+
+* Chapter 6 – You Are Not a Lottery Ticket
+The same question lurks behind every success: was it luck or skill? But builders aren’t backward-looking; they adopt a more definite attitude and engineer a better future.
+
+* Chapter 7 – Follow the Money
+Apply it correctly, and one simple insight—almost everything is radically less equal than it appears—can change your life.
+
+* Chapter 8 – Secrets
+Every one of today’s most famous and familiar ideas was once unknown and unsuspected. Lots more secrets remain undiscovered; learn to find them and see your fortune rise.
+
+* Chapter 9 – Foundations
+The decisions you make today will govern what your business looks like years now. Every entrepreneur has to get a few things right from the start.
+
+* Chapter 10 – The Mechanics of Mafia
+After PayPal, the “PayPal Mafia” created SpaceX, Tesla, LinkedIn, YouTube, Yammer, Palantir, and Yelp. The incredible story of that team will help you build yours.
+
+* Chapter 11 – If You Build It, Will They Come?
+The best product does not always win. Great products do not sell themselves. That’s up to you, and the problem is much stranger than it seems.
+
+* Chapter 12 – Man and Machine
+20 years ago, people feared cheap foreign labor; today, it’s replacement by robots. But the most successful entrepreneurs make products that help humans, not automate them away.
+
+* Chapter 13 – Seeing Green
+Clean energy is a hugely important sector—and to date it’s been a huge flop, as entrepreneurs neglected to answer the seven questions that every business must get right.
+
+* Chapter 14 – The Founder’s Paradox
+Founders are contradictory: revered and abhorred, powerful and weak. Just as we need founders in all their peculiarity, founders need to understand a few things to survive.
+
+* Conclusion
+What will our society look like 20 years from now? 100? It’s up to us. We cannot take for granted that the future will
+be better, and that means we have to work to build it now.
+* My Conclusion
+* My TODO
