@@ -18,9 +18,11 @@ Every powerful language has three mechanisms for expressing processes:
 ** Procedure/Program Application/Evaluation
 A substition model is used for procedure application. There are two evalution methods for procedure application:
 1. *Applicative-order evaluation*: evaluate the arguments and then apply. An argument is evaluated only once but that
-   evaluation is going to be wasteful if the argument isn't used.
+   evaluation is going to be wasteful if the argument isn't used. Scheme uses applicative-order evaluation.
 2. *Normal-order evaluation*: fully expand and then reduce/evaluate i.e. obtain expression involving only primitives and
    then evaluate. An argument isn't evaluated until it is used but it might be evaluated more than once after full expansion.
+
+Check out exercise [[https://github.com/ornash/sicp-excercises/tree/master/chapter-1/20-applicative-vs-normal][1.20]] to understand how this choice affects evaluation.
 
 ** Procedures and the Processes They Generate
 We now know the elements of programming, but that is not enough to say that we know how to program. In order to become
@@ -84,17 +86,112 @@ Functional procedures encourage reuse because every computation unit is defined 
 else. Decomposition into units also helps transform one implementation into other quickly.
 
 ** Formulating Abstractions with Higher Order Procedures
+Procedures that manipulate procedures are called higher-order procedures i.e. procedures that can accept procedures as
+arguments or return procedures as values. As shown below higher-order procedures permit us to manipulate general methods
+to create further abstractions.
+
+*** Procedure as Argument
+#+BEGIN_SRC scheme
+(define (sum operation a next b)
+  (if (> a b)
+      0
+      (+ (operation a)
+         (sum operation (next a) next b))))
+
+(define (inc n) (+ n 1))
+
+(define (cube x) (* x x x))
+
+(define (sum-cubes a b)
+  (sum cube a inc b))
+
+(define (identity x) x)
+
+(define (sum-integers a b)
+  (sum identity a inc b))
+#+END_SRC
+
+*** Constructing Procedures Using Lambda
+(lambda (<formal-parameters>) <body>)
+
+#+BEGIN_SRC scheme
+(lambda (x) (+ x 1))
+
+(define (sum-cubes a b)
+  (sum cube a (lambda (x) (+ x 1)) b))
+#+END_SRC
+*** Using let To Create Local Variable
+Let allows one to bind variables as locally as possible to where they are to be used. The general form of a let
+expression is
+
+(let ((<var1> <exp1>)
+      (<var2> <exp2>)
+      ...
+      (<varN> <expN>))
+  <body>)
+  
+which can be thought of as saying
+
+let <var1> have the value <exp1> and
+    <var2> have the value <exp2> and
+    ...
+    <varN> have the value <expN>
+  in <body>
+#+BEGIN_SRC scheme
+(define (f x y)
+  (let ((a (+ 1 (* x y)))
+        (b (- 1 y)))
+    (+ (* x (square a))
+       (* y b)
+       (* a b))))
+#+END_SRC
+
+*** Procedures as Returned Values
+Procedures can be returned using lambda as follows
+
+#+BEGIN_SRC scheme
+(define (get-average-reduction-function-using-function f)
+  (lambda (x) 
+    (average x (f x))))
+
+((get-average-reduction-function-using-function square) 10)
+
+;;This returns 55, which is the average of 10 and (square 10)
+#+END_SRC
+
+*** Abstraction and First Class Procedures
+We know that compound procedures are a crucial abstraction mechanism, because they permit us to express general methods
+of computing as explicit elements in our programming language e.g. (* x x x) can be represented with a general method
+called (cube x). Higher-order procedures permit us to manipulate these general methods to create further abstractions.
+
+In general, programming languages impose restrictions on the ways in which computational elements can be
+manipulated. Elements with the fewest restrictions are said to have first-class status. Some of the “rights and
+privileges” of first-class elements are:
+
+1. They may be named by variables.
+2. They may be passed as arguments to procedures.
+3. They may be returned as the results of procedures.
+4. They may be included in data structures.
+
+*Scheme/Lisp, unlike other common programming languages, awards procedures full first-class status.* This poses
+challenges for efficient implementation, but the resulting gain in expressive power is enormous. Chapter 4 highlights
+these challenges and provides solutions to deal with them.
+
 ** Miscellaneous
 *** Writing Recursive Programs
-Think in terms of smallest/simplest units of computation that is already available or you can achieve, then assemble
-small units to build larger units. Start with the base case and build up.
-Express your computation in as less words as possible, less code leads to less bugs.
-Do not think of simplifying your recursive program to generate an iterative process instead of recursive process
-immediately. First write a program that generates recusive and then improve it so that it generates iterative process.
+- Think in terms of smallest/simplest units of computation that is already available or you can achieve, then assemble
+  small units to build larger units. Start with the base case and build up.
+- Express your computation in as less words as possible, less code leads to less bugs.
+- Do not think of simplifying your recursive program to generate an iterative process instead of recursive process
+  immediately. First write a program that generates recusive and then improve it so that it generates iterative
+  process.
 *** Advantages of Recursive Programs
 - Compare the amount of code written for recursive/functional programs with equivalent code in procedural programming,
-*When you think differently, you write less code.* 
+  *When you think differently, you write less code.* 
 - You are able to write full fledged programs by only knowing about few core concepts.
+- It forces you to write code in small units which ultimately help identify patterns.
+- Identified patterns can further be used to define higher-order procedures.
+
 
 * Chapter 2 : Building Abstractions with Data
 
