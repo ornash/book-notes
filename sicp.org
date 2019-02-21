@@ -194,6 +194,25 @@ these challenges and provides solutions to deal with them.
 
 
 * Chapter 2 : Building Abstractions with Data
+Why do we want compound data in a programming language?
+- For the same reasons that we want compound procedures:
+  - to elevate the conceptual level at which we can design our programs,
+  - to increase the modularity of our designs,
+  - and to enhance the expressive power of our language.
+
+** Data Abstraction
+The general technique of isolating the parts of a program that deal with how data objects are *represented* from the
+parts of a program that deal with how data objects are *used* is called data abstraction.
+
+*** Data Abstraction
+- Structure the programs that are going to use compound data so that they operate on *abstract data*.
+- At the same time, define a *concrete representation* that is independent of its usage.
+- The interface between these two parts of our system will be a set of procedures, called selectors and constructors,
+  that implement the *abstract data* in terms of the *concrete representation*.
+
+*** Abstraction Barriers
+
+
 
 
 * Miscellaneous
