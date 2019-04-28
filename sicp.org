@@ -209,10 +209,65 @@ parts of a program that deal with how data objects are *used* is called data abs
 - At the same time, define a *concrete representation* that is independent of its usage.
 - The interface between these two parts of our system will be a set of procedures, called selectors and constructors,
   that implement the *abstract data* in terms of the *concrete representation*.
+- e.g. an implementation of rational numbers.
+#+BEGIN_SRC scheme
+(define (make-rat n d) (cons n d))
+(define (numer x) (car x))
+(define (denom x) (cdr x))
+#+END_SRC
+- An alternative approach that can be implemented later. Data abstraction allows changing it because users are only
+  aware of the constructor make-rat, and selectors numer and denom.
+#+BEGIN_SRC scheme
+(define (make-rat n d)
+  (let ((g (gcd n d)))
+    (cons (/ n g) 
+          (/ d g))))
+(define (numer x) (car x))
+(define (denom x) (cdr x))
+#+END_SRC
 
 *** Abstraction Barriers
+- Data abstraction forms levels and procedures at each level are the interfaces that define the *abstraction barriers*
+  and connect the different levels.
+- The data-abstraction methodology gives us a way to defer some implementation/representation decisions without losing
+  the ability to make progress on the rest of the system.
+- e.g. we can change above implementation later as follows:
+#+BEGIN_SRC scheme
+(define (make-rat n d)
+  (cons n d))
 
+(define (numer x)
+  (let ((g (gcd (car x) (cdr x))))
+    (/ (car x) g)))
 
+(define (denom x)
+  (let ((g (gcd (car x) (cdr x))))
+    (/ (cdr x) g)))
+#+END_SRC
 
+*** What Is Meant by Data?
+- It is not enough to say “whatever is implemented by the given selectors and constructors.”
+- We can think of data as defined by *some collection of selectors and constructors*, *together with specified
+  conditions that these procedures must fulfill in order to be a valid representation*.
+- For e.g. If we construct a rational number x from a pair of integers n and d, we need to guarantee that extracting the
+  numer and the denom of x and dividing them should yield the same result as dividing n by d.
+- An alternative implementation of "cons" could be:
+#+BEGIN_SRC scheme
+(define (cons x y)
+  (define (dispatch m)
+    (cond ((= m 0) x)
+          ((= m 1) y)
+          (else 
+           (error "Argument not 0 or 1:
+                   CONS" m))))
+  dispatch)
+
+(define (car z) (z 0))
+(define (cdr z) (z 1))
+#+END_SRC
+- Our implementation of rational numbers is unaffected by this change to "cons".
+- Note that this blurs the line between procedures and data. Thus, what matters is whether the constructors and
+  selectors satisfy the conditions of the data abstraction not how they are implemented or represented.
+- The data representation optimization decisions can be pushed to a later time if required.
 
 * Miscellaneous
