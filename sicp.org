@@ -120,6 +120,14 @@ to create further abstractions.
 (define (sum-cubes a b)
   (sum cube a (lambda (x) (+ x 1)) b))
 #+END_SRC
+
+- Lambda function's body is usually defined in terms existing functions.
+- Lambda function can itself define and use other lambda functions in its body.
+- Lambda function can itself expect other functions as parameters and use them in its body.
+- Functions can define lambdas on the fly and apply them.
+- Functions can define lambdas on the fly and pass them as arguments.
+- When a function receives a lambda function as parameter it gets a name and that named function can itself be applied
+  and evaluated.
 *** Using let To Create Local Variable
 Let allows one to bind variables as locally as possible to where they are to be used. The general form of a let
 expression is
@@ -269,5 +277,6 @@ parts of a program that deal with how data objects are *used* is called data abs
 - Note that this blurs the line between procedures and data. Thus, what matters is whether the constructors and
   selectors satisfy the conditions of the data abstraction not how they are implemented or represented.
 - The data representation optimization decisions can be pushed to a later time if required.
+
 
 * Miscellaneous
